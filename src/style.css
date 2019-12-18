@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 0.2rem */
+.box__grayBorder {
+  border: 2px solid #ececec; 
+  border-radius: 8px;
+}
+
+.form__cmp {
+  display: flex;
+  width: 100%;
+}
+
+.divider__gray {
+  border-top: 2px solid #ececec;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.todoItems > .item__row {
+  border-top: 2px #ececec solid;
+}
+
+.todoItems > .item__row:first-child {
+  border-top: none;
+}
+
+.todoItems > .item__row:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.todoItems > .item__row:hover {
+  background-color: #fafafa;
+}
+
+.item__row .col div:first-child {
+  cursor: pointer;
+}
+
+.todoItems > .item__row:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.ie10 .form__cmp {
+  display: table;
+}
+
+.ie10 .form__input,
+.ie10 .form__submit {
+  display: table-cell;
+}
+
+.ie10 .form__input {
+  width: 95%;
+}
